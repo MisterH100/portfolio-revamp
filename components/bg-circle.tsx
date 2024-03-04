@@ -12,5 +12,5 @@ export const Circle = React.forwardRef<
       className
     )}
     {...props}
-  />
+  ></div>
 ));

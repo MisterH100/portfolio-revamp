@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "project_name": "HTML/CSS",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi officiis",
+    "tech": ["HTML", "CSS"]
+  },
+  {
+    "id": 2,
+    "project_name": "JavaScript",
+    "description": "Strong understanding of JavaScript for client-side scripting and interaction with the DOM. Knowledge of modern frameworks/libraries",
+    "tech": ["React", "NextJs"]
+  },
+  {
+    "id": 3,
+    "project_name": "Server Side Languages",
+    "description": "Proficient in a server-side languages",
+    "tech": ["Nodejs", "Python"]
+  },
+  {
+    "id": 4,
+    "project_name": "Database Management",
+    "description": "Knowledge of database systems like MongoDB and the ability to design, implement, and interact with databases",
+    "tech": ["MongoDb"]
+  },
+  {
+    "id": 5,
+    "project_name": "Backend Development",
+    "description": "Competent in creating server-side logic, handling requests, and managing application logic",
+    "tech": ["ExpressJs"]
+  },
+  {
+    "id": 6,
+    "project_name": "APIs",
+    "description": "Strong understanding on how to design, build, and consume APIs. RESTful which are common in modern web development",
+    "tech": []
+  },
+  {
+    "id": 7,
+    "project_name": "Version Control/Git",
+    "description": "Proficient use of version control systems, such as Git, for tracking changes in code and collaborating with other developers",
+    "tech": ["Git"]
+  },
+  {
+    "id": 8,
+    "project_name": "Web Servers/Hosting",
+    "description": "Knowledge of web servers for hosting web applications",
+    "tech": ["Vercel", "Netlify", "Render"]
+  },
+  {
+    "id": 9,
+    "project_name": "Command Line/Shell",
+    "description": "Competent in working with the command line interface for tasks such as:",
+    "tech": ["File manipulation", "Automation", "Running scripts"]
+  },
+  {
+    "id": 10,
+    "project_name": "Problem-Solving and Debugging",
+    "description": "Strong problem-solving skills and the ability to debug and troubleshoot issues efficiently",
+    "tech": []
+  }
+]

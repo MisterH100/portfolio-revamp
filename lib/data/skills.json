@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "skill": "HTML/CSS",
+    "description": "Proficient in creating structured, semantic, and responsive web pages using HTML and CSS",
+    "list": ["HTML", "CSS"]
+  },
+  {
+    "id": 2,
+    "skill": "JavaScript",
+    "description": "Strong understanding of JavaScript for client-side scripting and interaction with the DOM. Knowledge of modern frameworks/libraries",
+    "list": ["React", "NextJs"]
+  },
+  {
+    "id": 3,
+    "skill": "Server Side Languages",
+    "description": "Proficient in a server-side languages",
+    "list": ["Nodejs", "Python"]
+  },
+  {
+    "id": 4,
+    "skill": "Database Management",
+    "description": "Knowledge of database systems like MongoDB and the ability to design, implement, and interact with databases",
+    "list": ["MongoDb"]
+  },
+  {
+    "id": 5,
+    "skill": "Backend Development",
+    "description": "Competent in creating server-side logic, handling requests, and managing application logic",
+    "list": ["ExpressJs"]
+  },
+  {
+    "id": 6,
+    "skill": "APIs",
+    "description": "Strong understanding on how to design, build, and consume APIs. RESTful which are common in modern web development",
+    "list": []
+  },
+  {
+    "id": 7,
+    "skill": "Version Control/Git",
+    "description": "Proficient use of version control systems, such as Git, for tracking changes in code and collaborating with other developers",
+    "list": ["Git"]
+  },
+  {
+    "id": 8,
+    "skill": "Web Servers/Hosting",
+    "description": "Knowledge of web servers for hosting web applications",
+    "list": ["Vercel", "Netlify", "Render"]
+  },
+  {
+    "id": 9,
+    "skill": "Command Line/Shell",
+    "description": "Competent in working with the command line interface for tasks such as:",
+    "list": ["File manipulation", "Automation", "Running scripts"]
+  },
+  {
+    "id": 10,
+    "skill": "Problem-Solving and Debugging",
+    "description": "Strong problem-solving skills and the ability to debug and troubleshoot issues efficiently",
+    "list": []
+  }
+]
