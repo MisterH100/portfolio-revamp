@@ -18,3 +18,5 @@ export const Circle = React.forwardRef<
     )}
   ></motion.div>
 ));
+
+Circle.displayName = "Circle";
