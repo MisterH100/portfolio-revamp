@@ -15,6 +15,8 @@ interface ITheme {
 interface contextProps {
   theme: ITheme;
   setTheme: Dispatch<SetStateAction<ITheme>>;
+  selected: string;
+  setSelected: Dispatch<SetStateAction<string>>;
 }
 
 const ThemeContext = createContext<contextProps>({} as contextProps);
@@ -25,9 +27,10 @@ export const ThemeContextProvider = ({
   children: React.ReactNode;
 }) => {
   const [theme, setTheme] = useState({ bg: "--background", card: "--card" });
+  const [selected, setSelected] = useState("Home");
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, setTheme, selected, setSelected }}>
       {children}
     </ThemeContext.Provider>
   );

@@ -4,41 +4,41 @@
 
 @layer base {
   :root {
-    --background: #02191b;
-    --foreground: #defafd;
+    --background: 185, 86%, 6%;
+    --foreground: 186, 89%, 93%;
 
-    --card: #080705;
-    --card-foreground: #defafd;
+    --card: 40, 23%, 3%;
+    --card-foreground: 186, 89%, 93%;
 
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: #080705;
-    --primary-foreground: #defafd;
+    --primary: 40, 23%, 3%;
+    --primary-foreground: 186, 89%, 93%;
 
-    --secondary: #390895;
-    --secondary-foreground: #defafd;
+    --secondary: 261, 90%, 31%;
+    --secondary-foreground: 186, 89%, 93%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: #c62df3;
-    --accent-foreground: #defafd;
+    --accent: 286, 89%, 56%;
+    --accent-foreground: 186, 89%, 93%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 186, 89%, 93%;
+    --input: 186, 89%, 93%;
+    --ring: 186, 89%, 93%;
     --radius: 0.5rem;
   }
   .dark {
-    background-color: var(--background);
-    color: var(--foreground);
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
   .light {
-    background-color: var(--foreground);
-    color: var(--foreground);
+    background-color: hsl(var(--foreground));
+    color: hsl(var(--foreground));
   }
 }

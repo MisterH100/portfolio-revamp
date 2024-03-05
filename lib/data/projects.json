@@ -4,34 +4,41 @@
     "project_name": "Blogging App",
     "description": "Full stack blogging app, created with NextJs ,with user login in database and more",
     "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
-    "link": ""
+    "link": "https://insights-blogs.vercel.app/"
   },
   {
     "id": 2,
     "project_name": "Shopping App",
     "description": "Shopping App,great ui design without libraries, custom components and connected to database",
     "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
-    "link": ""
+    "link": "https://cqp-product-shop.vercel.app/"
   },
   {
     "id": 3,
-    "project_name": "Python quiz generator",
-    "description": "A Python program that generates quiz question objects to be store in my database for my quiz application",
-    "tech": ["Python"],
-    "link": ""
-  },
-  {
-    "id": 4,
     "project_name": "Quiz application",
     "description": "A quiz application with player login,rank system across all players,leader board and quizzes generated from python",
     "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind", "ShadCN"],
-    "link": ""
+    "link": "https://quizme-this.vercel.app/"
   },
   {
-    "id": 5,
+    "id": 4,
     "project_name": "Music Website",
     "description": "Full stack music advertisement website build for a real music artist to advertise his music",
     "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
-    "link": ""
+    "link": "https://dustee-music.vercel.app/"
+  },
+  {
+    "id": 5,
+    "project_name": "Python quiz generator",
+    "description": "A Python program that generates quiz question objects to be store in my database for my quiz application",
+    "tech": ["Python"],
+    "link": "https://github.com/MisterH100/python_quiz_object_maker"
+  },
+  {
+    "id": 6,
+    "project_name": "Valentines App",
+    "description": "A fun little project i made on valentines day for friends",
+    "tech": ["NextJs", "Express", "MongoDb", "Tailwind", "ShadCN"],
+    "link": "https://bemyvalentines.vercel.app/"
   }
 ]
