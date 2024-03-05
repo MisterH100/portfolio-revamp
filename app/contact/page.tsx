@@ -51,13 +51,13 @@ export default function Contact() {
   return (
     <div className="relative pt-10 px-8 md:px-36 overflow-hidden">
       <Circle className="top-4 -right-[100px] md:right-[50px]" />
-      <Card className="w-full border-none md:pt-20 mb-10 rounded-xl md:bg-[#080705]">
+      <Card className="card w-full border-none md:pt-20 mb-10 rounded-xl md:bg-[--card]">
         <CardHeader className="md:text-center">
           <CardTitle className="relative z-20 text-3xl font-bold tracking-wider">
             Get in touch_
           </CardTitle>
         </CardHeader>
-        <CardContent className="text-lg md:text-2xl mt-10 md:mt-0 p-10 rounded-xl bg-[#080705] md:bg-none">
+        <CardContent className="text-lg md:text-2xl mt-10 md:mt-0 p-10 rounded-xl bg-[--card] md:bg-none">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
               <FormField
@@ -67,7 +67,11 @@ export default function Contact() {
                   <FormItem className="relative z-20">
                     <FormLabel>name</FormLabel>
                     <FormControl>
-                      <Input placeholder="name" {...field} />
+                      <Input
+                        className="resize-none bg-[--foreground] text-[--card]"
+                        placeholder="name"
+                        {...field}
+                      />
                     </FormControl>
                     <FormDescription>*Provide your name</FormDescription>
                     <FormMessage />
@@ -81,7 +85,11 @@ export default function Contact() {
                   <FormItem className="relative z-20">
                     <FormLabel>email</FormLabel>
                     <FormControl>
-                      <Input placeholder="email" {...field} />
+                      <Input
+                        className="resize-none bg-[--foreground] text-[--card]"
+                        placeholder="email"
+                        {...field}
+                      />
                     </FormControl>
                     <FormDescription>*Provide your email</FormDescription>
                     <FormMessage />
@@ -97,7 +105,7 @@ export default function Contact() {
                     <FormControl>
                       <Textarea
                         placeholder="message"
-                        className="resize-none"
+                        className="resize-none bg-[--foreground] text-[--card]"
                         {...field}
                       />
                     </FormControl>

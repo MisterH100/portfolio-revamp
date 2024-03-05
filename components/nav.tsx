@@ -38,7 +38,7 @@ export const Nav = () => {
             animate={{ x: 0 }}
             exit={{ opacity: 0, x: -400 }}
             transition={{ type: "tween" }}
-            className="w-full flex flex-col md:flex-row items-center gap-10 h-[900px] md:h-[104px] z-[100] rounded-l-xl bg-[#080705] overflow-hidden"
+            className="w-full flex flex-col md:flex-row items-center gap-10 h-[900px] md:h-[104px] z-[100] rounded-l-xl bg-[--card] overflow-hidden"
           >
             <ul className="w-full flex flex-col md:flex-row justify-evenly pt-20 md:pt-0 text-center gap-20 md:gap-0">
               {navLinks.map((link) => (

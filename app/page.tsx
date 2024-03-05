@@ -27,11 +27,11 @@ export default function Home() {
   ]);
 
   return (
-    <main className="relative min-h-screen flex justify-center pt-10 px-8 md:px-36 overflow-hidden">
-      <Circle className="top-[100px] left-[200px] md:top-[300px] md:left-[50px]"></Circle>
-      <Card className="border-none md:w-full md:h-[606px] md:pt-20 rounded-xl md:bg-[#080705]">
+    <main className="relative w-full min-h-screen flex justify-center pt-10 px-8 md:px-36 overflow-hidden">
+      <Circle className="top-[100px] left-[200px] md:top-[150px] md:left-[150px]"></Circle>
+      <Card className="border-none md:w-full md:h-[606px] md:pt-20 rounded-xl md:bg-[--card]">
         <CardHeader>
-          <CardTitle className="relative z-20 text-xl font-bold md:text-center tracking-wider">
+          <CardTitle className="min-h-[100px] md:min-h-fit relative z-20 text-xl font-bold md:text-center tracking-wider">
             <TypeAnimation
               sequence={[
                 "Meet your next Developer",
@@ -52,7 +52,7 @@ export default function Home() {
             />
           </CardTitle>
         </CardHeader>
-        <CardHeader className="md:text-center">
+        <CardHeader className="md:text-center rounded-xl bg-[--card]">
           <CardTitle className="relative z-20 text-3xl font-medium tracking-wider">
             Handsome Nyathi
           </CardTitle>
@@ -62,7 +62,7 @@ export default function Home() {
             South Africa
           </CardDescription>
         </CardHeader>
-        <CardContent className="relative z-20 md:flex justify-center gap-10 md:pt-10">
+        <CardContent className="relative z-20 grid grid-cols-3 md:flex justify-center gap-10 md:pt-10 mt-10 md:mt-0">
           {socials.map((social) => (
             <Link href={social.link} key={social.id}>
               <Image

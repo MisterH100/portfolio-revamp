@@ -1,62 +1,37 @@
 [
   {
     "id": 1,
-    "project_name": "HTML/CSS",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi officiis",
-    "tech": ["HTML", "CSS"]
+    "project_name": "Blogging App",
+    "description": "Full stack blogging app, created with NextJs ,with user login in database and more",
+    "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
+    "link": ""
   },
   {
     "id": 2,
-    "project_name": "JavaScript",
-    "description": "Strong understanding of JavaScript for client-side scripting and interaction with the DOM. Knowledge of modern frameworks/libraries",
-    "tech": ["React", "NextJs"]
+    "project_name": "Shopping App",
+    "description": "Shopping App,great ui design without libraries, custom components and connected to database",
+    "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
+    "link": ""
   },
   {
     "id": 3,
-    "project_name": "Server Side Languages",
-    "description": "Proficient in a server-side languages",
-    "tech": ["Nodejs", "Python"]
+    "project_name": "Python quiz generator",
+    "description": "A Python program that generates quiz question objects to be store in my database for my quiz application",
+    "tech": ["Python"],
+    "link": ""
   },
   {
     "id": 4,
-    "project_name": "Database Management",
-    "description": "Knowledge of database systems like MongoDB and the ability to design, implement, and interact with databases",
-    "tech": ["MongoDb"]
+    "project_name": "Quiz application",
+    "description": "A quiz application with player login,rank system across all players,leader board and quizzes generated from python",
+    "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind", "ShadCN"],
+    "link": ""
   },
   {
     "id": 5,
-    "project_name": "Backend Development",
-    "description": "Competent in creating server-side logic, handling requests, and managing application logic",
-    "tech": ["ExpressJs"]
-  },
-  {
-    "id": 6,
-    "project_name": "APIs",
-    "description": "Strong understanding on how to design, build, and consume APIs. RESTful which are common in modern web development",
-    "tech": []
-  },
-  {
-    "id": 7,
-    "project_name": "Version Control/Git",
-    "description": "Proficient use of version control systems, such as Git, for tracking changes in code and collaborating with other developers",
-    "tech": ["Git"]
-  },
-  {
-    "id": 8,
-    "project_name": "Web Servers/Hosting",
-    "description": "Knowledge of web servers for hosting web applications",
-    "tech": ["Vercel", "Netlify", "Render"]
-  },
-  {
-    "id": 9,
-    "project_name": "Command Line/Shell",
-    "description": "Competent in working with the command line interface for tasks such as:",
-    "tech": ["File manipulation", "Automation", "Running scripts"]
-  },
-  {
-    "id": 10,
-    "project_name": "Problem-Solving and Debugging",
-    "description": "Strong problem-solving skills and the ability to debug and troubleshoot issues efficiently",
-    "tech": []
+    "project_name": "Music Website",
+    "description": "Full stack music advertisement website build for a real music artist to advertise his music",
+    "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
+    "link": ""
   }
 ]

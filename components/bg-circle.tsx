@@ -8,7 +8,7 @@ export const Circle = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "absolute w-[400px] h-[400px] rounded-full bg-[#c62df3]",
+      "absolute w-[400px] h-[400px] rounded-full bg-[#c62df3] transition-all duration-150",
       className
     )}
     {...props}

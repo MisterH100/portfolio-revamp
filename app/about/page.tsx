@@ -14,14 +14,14 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <div className="relative pt-10 px-8 md:px-36 overflow-hidden">
-      <Circle className="top-4 -left-[200px] md:left-[50px]" />
-      <Card className="w-full border-none md:pt-20 mb-10 rounded-xl md:bg-[#080705]">
+      <Circle className="hidden md:block top-[10%] left-[20%] " />
+      <Card className="md:z-0 w-full border-none md:pt-20 mb-10 rounded-xl md:bg-[--card]">
         <CardHeader className="md:text-center">
           <CardTitle className="relative z-20 text-3xl font-bold tracking-wider">
             About me_
           </CardTitle>
         </CardHeader>
-        <CardContent className="mt-10 md:mt-0 p-10 bg-[#080705] md:bg-none rounded-xl">
+        <CardContent className="mt-10 md:mt-0 p-10 bg-[--card] md:bg-none rounded-xl">
           <p className="relative z-20 text-lg">
             Hello ! I'm <span className="font-black">Handsome Nyathi</span>, a
             skilled web developer with a keen focus on UI/UX design
