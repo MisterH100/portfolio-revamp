@@ -8,13 +8,9 @@ import {
   useState,
 } from "react";
 
-interface ITheme {
-  bg: string;
-  card: string;
-}
 interface contextProps {
-  theme: ITheme;
-  setTheme: Dispatch<SetStateAction<ITheme>>;
+  theme: string;
+  setTheme: Dispatch<SetStateAction<string>>;
   selected: string;
   setSelected: Dispatch<SetStateAction<string>>;
 }
@@ -26,7 +22,7 @@ export const ThemeContextProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [theme, setTheme] = useState({ bg: "--background", card: "--card" });
+  const [theme, setTheme] = useState("card_dark");
   const [selected, setSelected] = useState("Home");
 
   return (

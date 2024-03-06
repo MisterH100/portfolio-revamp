@@ -24,6 +24,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useThemeContext } from "@/lib/themeContext";
 export default function Projects() {
+  const { theme } = useThemeContext();
   const [skills, setSkills] = useState(skill_data);
   const [projects, setProjects] = useState(project_data);
   const [currentPage, setCurrentPage] = useState(1);
@@ -74,7 +75,9 @@ export default function Projects() {
         whileInView={{ y: 0, opacity: 100 }}
         transition={{ type: "tween" }}
       >
-        <Card className="card w-full border-none md:pt-20 mb-10  rounded-xl md:bg-card">
+        <Card
+          className={`${theme} w-full border-none md:pt-20 mb-10  rounded-xl`}
+        >
           <CardHeader className="md:text-center">
             <CardTitle className="text-3xl font-bold tracking-wider">
               Recent Projects_
@@ -85,7 +88,7 @@ export default function Projects() {
               <Button
                 variant="outline"
                 size="icon"
-                className="h-8 w-8 rounded-full"
+                className="text-foreground h-8 w-8 rounded-full"
                 onClick={goToPrevPage}
               >
                 <ArrowLeft className="h-4 w-4" />
@@ -94,7 +97,7 @@ export default function Projects() {
               <Button
                 variant="outline"
                 size="icon"
-                className="h-8 w-8 rounded-full"
+                className="text-foreground h-8 w-8 rounded-full"
                 onClick={goToNextPage}
               >
                 <ArrowRight className="h-4 w-4" />
@@ -113,7 +116,7 @@ export default function Projects() {
                   whileHover={{
                     border: "1px solid white",
                   }}
-                  className="w-full mb-10 md:mb-0 bg-card rounded-xl"
+                  className={`${theme} w-full mb-10 md:mb-0 rounded-xl`}
                   key={project.id}
                 >
                   <Link href={project.link} target="_blank">
@@ -167,9 +170,9 @@ export default function Projects() {
                 loop: true,
               }}
             >
-              <div className="flex justify-end items-center gap-10 pr-6">
-                <CarouselPrevious />
-                <CarouselNext />
+              <div className="flex justify-end items-center gap-10 pr-6 py-4">
+                <CarouselPrevious className="text-foreground" />
+                <CarouselNext className="text-foreground" />
               </div>
               <CarouselContent className="-ml-4">
                 {skills.map((skill) => (
@@ -177,7 +180,7 @@ export default function Projects() {
                     key={skill.id}
                     className="pl-4 basis-full md:basis-1/2"
                   >
-                    <Card className="border-none">
+                    <Card className={`${theme} border-none`}>
                       <CardHeader>
                         <CardTitle>{skill.skill}</CardTitle>
                         <CardDescription>{skill.description}</CardDescription>
@@ -200,7 +203,7 @@ export default function Projects() {
               <Link
                 href="https://github.com/MisterH100"
                 target="_blank"
-                className="flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium w-[200px] h-[52px] bg-secondary hover:bg-accent"
+                className="flex items-center text-foreground justify-center whitespace-nowrap rounded-md text-sm font-medium w-[200px] h-[52px] bg-secondary hover:bg-accent"
               >
                 Visit github
               </Link>

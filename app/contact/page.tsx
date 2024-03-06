@@ -26,6 +26,7 @@ import { useToast } from "@/components/ui/use-toast";
 import axios from "axios";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useThemeContext } from "@/lib/themeContext";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -39,6 +40,7 @@ const formSchema = z.object({
 });
 
 export default function Contact() {
+  const { theme } = useThemeContext();
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
@@ -98,24 +100,28 @@ export default function Contact() {
         whileInView={{ y: 0, opacity: 100 }}
         transition={{ type: "tween" }}
       >
-        <Card className="w-full border-none md:pt-20 mb-10 rounded-xl md:bg-card">
+        <Card
+          className={`${theme} w-full border-none md:pt-20 mb-10 rounded-xl`}
+        >
           <CardHeader className="md:text-center">
             <CardTitle className="relative z-20 text-3xl font-bold tracking-wider">
               Get in touch_
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-lg md:text-2xl mt-10 md:mt-0 p-10 rounded-xl bg-card md:bg-none">
+          <CardContent
+            className={`${theme} text-lg md:text-2xl mt-10 md:mt-0 p-10 rounded-xl`}
+          >
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)}>
                 <FormField
                   control={form.control}
                   name="name"
                   render={({ field }) => (
-                    <FormItem className="relative z-20">
+                    <FormItem>
                       <FormLabel>name</FormLabel>
                       <FormControl>
                         <Input
-                          className="resize-none bg-foreground text-card"
+                          className="resize-none bg-foreground text-card border-card"
                           placeholder="name"
                           {...field}
                         />
@@ -133,7 +139,7 @@ export default function Contact() {
                       <FormLabel>email</FormLabel>
                       <FormControl>
                         <Input
-                          className="resize-none bg-foreground text-card"
+                          className="resize-none bg-foreground text-card border-card"
                           placeholder="email"
                           {...field}
                         />
@@ -152,7 +158,7 @@ export default function Contact() {
                       <FormControl>
                         <Textarea
                           placeholder="message"
-                          className="resize-none bg-foreground text-card"
+                          className="resize-none bg-foreground text-card border-card"
                           {...field}
                         />
                       </FormControl>

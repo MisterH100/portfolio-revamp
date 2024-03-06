@@ -41,4 +41,13 @@
     background-color: hsl(var(--foreground));
     color: hsl(var(--foreground));
   }
+
+  .card_dark {
+    background-color: hsl(var(--card));
+    color: hsl(var(--card-foreground));
+  }
+  .card_light {
+    background-color: hsl(var(--card-foreground));
+    color: hsl(var(--card));
+  }
 }
