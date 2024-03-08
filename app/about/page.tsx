@@ -12,14 +12,14 @@ import { motion } from "framer-motion";
 import { useThemeContext } from "@/lib/themeContext";
 
 export default function About() {
-  const { theme, setSelected } = useThemeContext();
+  const { theme, setSelected, animationType } = useThemeContext();
   return (
     <div className="relative pt-10 px-8 md:px-36 overflow-hidden">
       <Circle className="hidden md:block top-[10%] left-[20%] " />
       <motion.div
         initial={{ y: 200, opacity: 0 }}
         whileInView={{ y: 0, opacity: 100 }}
-        transition={{ type: "tween" }}
+        transition={{ type: animationType }}
       >
         <Card
           className={`${theme} md:z-0 w-full border-none md:pt-20 mb-10 rounded-xl`}

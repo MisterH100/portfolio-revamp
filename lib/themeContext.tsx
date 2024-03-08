@@ -13,6 +13,8 @@ interface contextProps {
   setTheme: Dispatch<SetStateAction<string>>;
   selected: string;
   setSelected: Dispatch<SetStateAction<string>>;
+  animationType: string;
+  setAnimationType: Dispatch<SetStateAction<string>>;
 }
 
 const ThemeContext = createContext<contextProps>({} as contextProps);
@@ -24,9 +26,19 @@ export const ThemeContextProvider = ({
 }) => {
   const [theme, setTheme] = useState("card_dark");
   const [selected, setSelected] = useState("Home");
+  const [animationType, setAnimationType] = useState("tween");
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme, selected, setSelected }}>
+    <ThemeContext.Provider
+      value={{
+        theme,
+        setTheme,
+        selected,
+        setSelected,
+        animationType,
+        setAnimationType,
+      }}
+    >
       {children}
     </ThemeContext.Provider>
   );

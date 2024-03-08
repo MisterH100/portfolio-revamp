@@ -24,7 +24,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useThemeContext } from "@/lib/themeContext";
 export default function Projects() {
-  const { theme } = useThemeContext();
+  const { theme, setSelected, animationType } = useThemeContext();
   const [skills, setSkills] = useState(skill_data);
   const [projects, setProjects] = useState(project_data);
   const [currentPage, setCurrentPage] = useState(1);
@@ -64,7 +64,6 @@ export default function Projects() {
       setDirection(-400);
     }
   };
-  const { setSelected } = useThemeContext();
 
   return (
     <div className="relative pt-10 md:px-36 overflow-hidden">
@@ -73,7 +72,7 @@ export default function Projects() {
       <motion.div
         initial={{ y: 200, opacity: 0 }}
         whileInView={{ y: 0, opacity: 100 }}
-        transition={{ type: "tween" }}
+        transition={{ type: animationType }}
       >
         <Card
           className={`${theme} w-full border-none md:pt-20 mb-10  rounded-xl`}

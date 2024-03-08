@@ -40,7 +40,7 @@ const formSchema = z.object({
 });
 
 export default function Contact() {
-  const { theme } = useThemeContext();
+  const { theme, animationType } = useThemeContext();
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
@@ -98,7 +98,7 @@ export default function Contact() {
       <motion.div
         initial={{ y: 200, opacity: 0 }}
         whileInView={{ y: 0, opacity: 100 }}
-        transition={{ type: "tween" }}
+        transition={{ type: animationType }}
       >
         <Card
           className={`${theme} w-full border-none md:pt-20 mb-10 rounded-xl`}

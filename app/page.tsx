@@ -26,7 +26,7 @@ import { useThemeContext } from "@/lib/themeContext";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Home() {
-  const { theme, setSelected } = useThemeContext();
+  const { theme, setSelected, animationType } = useThemeContext();
   const [socials, setSocials] = useState([
     {
       id: 1,
@@ -89,7 +89,7 @@ export default function Home() {
       <motion.div
         initial={{ y: 200, opacity: 0 }}
         whileInView={{ y: 0, opacity: 100 }}
-        transition={{ type: "tween" }}
+        transition={{ type: animationType }}
         className="md:w-full md:h-[606px]"
       >
         <Card
