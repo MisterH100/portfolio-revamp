@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useThemeContext } from "@/lib/themeContext";
-import { ChevronsUpDown } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -139,17 +138,18 @@ export const Nav = () => {
             <div className={`w-full flex justify-center px-10 py-4 md:hidden`}>
               <Collapsible className="w-full">
                 <CollapsibleTrigger asChild>
-                  <Button className={`${theme} border border-input`}>
+                  <Button className={`${theme} w-full border border-input`}>
                     Settings
                   </Button>
                 </CollapsibleTrigger>
-                <CollapsibleContent className="p-4 border-b border-muted-foreground">
+                <CollapsibleContent className="py-4 border-b border-muted-foreground">
                   <div className="flex items-center gap-2">
+                    <Label htmlFor="light-mode">Light Mode</Label>
                     <Switch
                       id="light-mode"
                       className={`${
                         theme === "card_dark" && "border-foreground"
-                      }`}
+                      } ml-auto`}
                       checked={theme === "card_light"}
                       onCheckedChange={() =>
                         setTheme(
@@ -157,14 +157,14 @@ export const Nav = () => {
                         )
                       }
                     />
-                    <Label htmlFor="light-mode">Light Mode</Label>
                   </div>
                   <div className="flex items-center gap-2 pt-2">
+                    <Label htmlFor="bouncy-animations">Bouncy Animations</Label>
                     <Switch
                       id="bouncy-animations"
                       className={`${
                         theme === "card_dark" && "border-foreground"
-                      }`}
+                      } ml-auto`}
                       checked={animationType === "spring"}
                       onCheckedChange={() =>
                         setAnimationType(
@@ -172,7 +172,6 @@ export const Nav = () => {
                         )
                       }
                     />
-                    <Label htmlFor="bouncy-animations">Bouncy Animations</Label>
                   </div>
                 </CollapsibleContent>
               </Collapsible>
@@ -186,16 +185,6 @@ export const Nav = () => {
                     }`}
                     onClick={() => {
                       setSelected(link.name);
-                      if (typeof window != "undefined") {
-                        if (window.innerWidth < DESKTOP_SCREEN_WIDTH) {
-                          setOpen(false);
-                        }
-                        window.scrollTo({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth",
-                        });
-                      }
                     }}
                     href={link.path}
                   >
