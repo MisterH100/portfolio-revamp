@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
+    "project_name": "External Wear",
+    "description": "Official e-commerce web application for externalwea sa, buy shoes, tech and accessories",
+    "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
+    "link": "https://externalwear.co.za"
+  },
+  {
+    "id": 2,
     "project_name": "Blogging App",
     "description": "Full stack blogging app, created with NextJs ,with user login in database and more",
     "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
     "link": "https://insights-blogs.vercel.app/"
-  },
-  {
-    "id": 2,
-    "project_name": "Shopping App",
-    "description": "Shopping App,great ui design without libraries, custom components and connected to database",
-    "tech": ["NextJs", "MongoDb", "Express", "NodeJs", "Tailwind"],
-    "link": "https://cqp-product-shop.vercel.app/"
   },
   {
     "id": 3,

@@ -21,7 +21,7 @@ export const Footer = () => {
             rights reserved. Built using cutting-edge technologies. Let's
             connect:
           </p>
-          <ul>
+          <ul className="flex justify-between items-center pt-4">
             <li>
               <Link
                 className="text-accent"

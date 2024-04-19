@@ -104,7 +104,7 @@ export const Nav = () => {
                     <DialogTitle>Settings</DialogTitle>
                   </DialogHeader>
                   <div className="flex justify-between items-center">
-                    <DialogTitle>Light mode</DialogTitle>
+                    <DialogTitle>Light Mode</DialogTitle>
                     <Switch
                       className={`${
                         theme === "card_dark" && "border-foreground"
@@ -118,7 +118,7 @@ export const Nav = () => {
                     />
                   </div>
                   <div className="flex justify-between items-center">
-                    <DialogTitle>Bouncy animations</DialogTitle>
+                    <DialogTitle>Bouncy Animations</DialogTitle>
                     <Switch
                       className={`${
                         theme === "card_dark" && "border-foreground"
